@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>passpage</title>
+</head>
+<body>
+    <form>
+        <input type="text" id="pswd">
+        <input type="button" value="Submit" onclick="checkPswd();" />
+    </form>
+    <!--Function to check password the already set password is admin-->
+    <script type="text/javascript">
+        function checkPswd() {
+            var password = document.getElementById("pswd").value;
+            if (password == "find what your missing") {
+                window.location.href="page-05.html";
+            }
+            else{
+                alert("Passwords do not match.");
+            }
+        }
+    </script>
+</body>
+</html>
