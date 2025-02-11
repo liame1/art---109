@@ -11,6 +11,42 @@
 <body>
     <header>
         <h1 contenteditable="true">HTML 4 US BY US</h1>
+        <div>
+            <input type="date" value="1435/01/01">
+        </div>
+        <div>
+            <label for="what the gibby rillus">Choose a grimace:</label>
+
+            <select name="grimace" id="grimace-select">
+            <option value="">--Select the option--</option>
+            <option value="dog">gribas</option>
+            <option value="cat">bogus</option>
+            <option value="hamster">gibby</option>
+            <option value="parrot">rillus</option>
+            <option value="spider">grimace</option>
+            <option value="goldfish">breagle</option>
+            </select>
+        </div>
+        <div>
+            <fieldset>
+                <legend>gibby? bogus? grimace?</legend>
+                <div>
+                    <input type="radio" id="gibby">
+                    <label for="gibby">gibby</label>
+                  </div>
+
+                <div>
+                  <input type="radio" id="bogus">
+                  <label for="bogus">bogus</label>
+                </div>
+              
+                <div>
+                    <input type="radio" id="grimace">
+                    <label for="grimace">grimace</label>
+                  </div>
+              </fieldset>
+              
+        </div>
         <nav>
             <ul>
                 <li><a href="#gibbus">gibbus</a></li>
@@ -19,7 +55,17 @@
             </ul>
         </nav>
         <div>
-            <img src="images/conductor_we_have_a_problem.gif">
+            <button aria-label="Close" onclick="myDialog.close()">
+                <svg
+                aria-hidden="false"
+                focusable="false"
+                width="17"
+                height="17"
+                ></svg>
+        </div>
+        <br><br><br>
+        <div>
+            <img src="images/conductor_we_have_a_problem.gif" alt="conductor_gif">
         </div>
     </header>
     <main>
