@@ -1,0 +1,101 @@
+/*
+COLOR PALETTE
+
+Blossom #ffe6e7
+Poppy #D33E43
+Cinereous #9B7874
+Vibrant Cinereous #fa968b
+Dim Gray #666370
+Space Cadet #1C1F33
+
+*/
+
+/* GLOBAL STYLES 
+------------------------------------*/
+html {
+    box-sizing: border-box;
+}
+*, *:before *:after {
+    box-sizing: inherit;
+}
+html, body {
+    height: 100%;
+}
+body {
+    background: rgb(186, 230, 165);
+    margin: 0;
+}
+
+/* links */
+a {
+    color: #D33E43;
+}
+a:hover{
+    color: #fa968b;
+    text-decoration: none;
+}
+footer a {
+    color: #fa968b;
+}
+footer a:hover {
+    color: #D33E43;
+}
+.btn {
+    background: #ffe6e7;
+    text-decoration: none;
+}
+
+.content-wrapper {
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 900px;
+}
+/* HOME
+------------------------------------*/
+.home {
+    background: url(images/css_Background.JPG) no-repeat;
+    background-size: cover;
+}
+.home .content-wrapper {
+    background: #66637080;
+}
+
+/* RESUME
+------------------------------------*/
+.resume header::before {
+    background: url(images/css_Background.JPG) center;
+    background-size: cover;
+    content: "";
+    display: block;
+    height: 375px;
+}
+
+/* Profile
+------------------------------------*/
+
+/* Projects
+------------------------------------*/
+
+/* Work Experience
+------------------------------------*/
+
+/* Education
+------------------------------------*/
+
+
+/* FOOTER
+------------------------------------*/
+footer {
+    background: #222;
+    color: #ffe6e7;
+}
+.socials {
+    list-style-type: none;
+    padding: 0;
+}
+.socials li {
+    display: inline-block;
+}
+.socials img {
+    width: 64px;
+}
