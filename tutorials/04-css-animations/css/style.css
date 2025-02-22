@@ -1,0 +1,118 @@
+/* -------- FIXES --------- */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-size: 1.6rem;
+}
+* {
+    margin: 0;
+    padding: 0;
+    }
+/* -------------- MAIN ------------------ */
+.center-content {
+    padding: 50px 50px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    
+}
+
+.bill {
+    width: 500px;
+    height: 750px;
+    animation: 5s infinite rotating;
+}
+
+
+
+/* -------------- ANIMATIONS ------------------ */
+
+/* image stretch */
+@keyframes stretching-image {
+    0% {
+      width: 100px;
+    }
+    100% {
+      width: 960px;
+    }
+  }
+  
+.image-1 {
+    outline: 5px solid #000000;
+    animation-name: stretching-image;
+    animation-timing-function: (5, jump-both);
+    animation-duration: 3s;
+}
+  
+/* background color changing spectrum */
+@keyframes coloring {
+    0% { background-color: blue; }
+    25% { background-color: red; }
+    50%  { background-color: yellow; }
+    75%  { background-color: green; }
+    100%   { background-color: blue; }
+}
+
+.bg {
+    border: 10px solid #ffff;
+    animation-name: coloring;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+/* idk yet */
+@keyframes stretching {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 510px;
+    }
+}
+/* 
+.button {
+    margin: 50px;
+    letter-spacing: 10px;
+    padding: 20px;
+    background-color: white;
+    display: inline-block;
+    font-size: 150px;
+    animation-name: stretching;
+    animation-duration: 2s;
+}
+ */
+.button {
+    max-width: 550px;
+    margin: 50px;
+    letter-spacing: 10px;
+    padding: 20px;
+    background-color: white;
+    display: inline-block;
+    font-size: 150px;
+    animation: 2s 3 stretching alternate;
+}
+
+/* longhand vs shorthand =
+
+  animation-duration: 2s;
+  animation-name: stretching
+  animation-iteration-count: 3;
+  animation-direction: alternate;
+
+  OR
+
+  animation: 2s 3 stretching alternate;
+*/
+
+@keyframes rotating {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
