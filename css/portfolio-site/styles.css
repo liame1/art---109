@@ -24,6 +24,17 @@ html, body {
 body {
     background: rgb(186, 230, 165);
     margin: 0;
+    font-family: "IBM Plex Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: auto;
+    font-style: auto;
+    font-variation-settings: "wdth" 100;
+}
+h1, h2, h3 {
+    font-family: "sen", serif;
+    font-optical-sizing: auto;
+    font-weight: auto;
+    font-style: auto;
 }
 
 /* links */
@@ -50,6 +61,8 @@ footer a:hover {
     padding: 30px;
     max-width: 900px;
 }
+
+
 /* HOME
 ------------------------------------*/
 .home {
