@@ -1,2 +1,44 @@
-.minecraft {
+/* CSSSSS FIXES */
+* {
+    margin: 0;
+    padding: 0;
+    }
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+
+
+
+  /* IMAGE STYLING */
+.images:hover #larry {
+    transform: scale(1.1);
+}
+.images #larry {
+    
+    position: absolute;
+    z-index: 2;
+}
+.images #cabin {
+    position: absolute;
+    z-index: 3;
+}
+.images #cubicm {
+    position: absolute;
+    z-index: 4;
+}
+.images #majorana {
+    position: absolute;
+    z-index: 5;
+}
+
+
+/* FUNCTIONALITY LINKS*/
+a {
+    all: unset;
+    cursor: pointer;
 }
