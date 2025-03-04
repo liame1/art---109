@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Document</title>
+    <title>Collage!</title>
 </head>
+
 <body>
+    <!-- TEST FUNCTIONS -->
+    <!-- Trigger/Open The Modal -->
+    <button class="images" id="my-btn"><img src="images/LarryRedmon-tp.png"></button>
 
-    <section class="images" >
-        <a href="https://www.youtube.com/watch?v=LyZ7Q4BI3A0&list=PLzIqlVhcb_cwBQs6K9AuV3vfV-qhrwv94">
-            <img id="larry" src="images/LarryRedmon-tp.png"></img>
-        </a>
-        <img id="cabin" src="images/UnrealEngineCabin-tp.png"></img>
-        <img id="cubicm" src="images/CubicMetre-tp.png"></img>
-        <img id="majorana" src="images/Majorana-tp.png"></img>
-    </section>
-    <input type="image" src="images/LarryRedmon-tp.png" alt="Submit Form" />
+    <!-- The Modal -->
+    <div id="my-modal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-box">
+            <span class="close">&times;</span>
+        <div class="modal-content">
+            <iframe src="https://www.youtube.com/watch?v=LyZ7Q4BI3A0" scrolling="no" width="480px" height="270px"></iframe>
+        </div>
+    </div>
 
-
-
+<script src="js/main.js"></script>
 </body>
 </html>
