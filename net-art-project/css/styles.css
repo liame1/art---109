@@ -12,10 +12,20 @@ html {
   }
   
 /* IMAGE STYLING */
-.images {
-    transform: scale;
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: inline-block;
 }
 
+.images {
+transition: scale 0.7s;
+}
+.images:hover {
+    scale: 110%;
+}
 
 /* BODY */
 body {font-family: Arial, Helvetica, sans-serif;}
