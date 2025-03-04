@@ -21,16 +21,51 @@ button {
   cursor: pointer;
   display: inline-block;
 } 
-.larry {
-  margin: 150px 150px;
+#cabin {
+  margin: 27% 0% 0% -35%;
+  scale: 50%;
 }
-.cabin {
-  margin: 200px;
-  
+#larry {
+  margin: 30% 0% 0% 70%;
+  scale: 100%;
+}
+#boyboy {
+  margin: -2% 0% 0% 45%;
+  scale: 80%;
+}
+#cubic {
+  margin: 10% 0% 0% 40%;
+  scale: 60%;
+}
+#bintur {
+  margin: 15% 0% 0% 10%;
+  scale: 60%;
+}
+#xiaoma {
+  margin: 0% 0% 20% 20%;
+  scale: 100%;
+}
+#gx1000 {
+  margin: -8% 0% 0% -10%;
+  scale: 80%;
+}
+#nard {
+  margin: -1% 0% 0% 85%;
+  scale: 100%;
+}
+#majorana {
+  margin: 25% 10% 10% 20%;
+  scale: 80%;
 }
 
 
+
+/* Button animation */
 .btn-image {
+max-width: 100%;
+max-height: 100%;
+width: auto;
+height: auto;
 transition: scale 0.7s;
 }
 .btn-image:hover {
@@ -39,7 +74,10 @@ transition: scale 0.7s;
 }
 
 /* BODY */
-body {font-family: Arial, Helvetica, sans-serif;}
+body {
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 /* FUNCTIONAL LINKS*/
 
@@ -100,4 +138,13 @@ to {opacity:1}
 color: #000;
 text-decoration: none;
 cursor: pointer;
+}
+
+ 
+/* dynamic screen sizing */
+
+@media screen and (max-width:1700px) {
+  .btn-image {
+    width: 90%;
+  }
 }
