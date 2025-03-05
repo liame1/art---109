@@ -22,56 +22,77 @@ body {
 
 /* IMAGE STYLING */
 
-button {
+a {
   position: absolute;
   background: none;
   border: none;
   padding: 0;
   cursor: pointer;
   display: inline-block;
-} 
+}
+
 #cabin {
+  animation: ani-index 10s infinite linear;
   margin: 27% 0% 0% -35%;
   scale: 50%;
+  z-index: 1;
 }
 #larry {
+  animation: ani-index 11s infinite linear;
   margin: 30% 0% 0% 70%;
   scale: 100%;
+  z-index: 2;
 }
 #boyboy {
+  animation: ani-index 12s infinite linear;
   margin: -2% 0% 0% 45%;
   scale: 80%;
+  z-index: 3;
 }
 #cubic {
+  animation: ani-index 13s infinite linear;
   margin: 10% 0% 0% 40%;
   scale: 60%;
+  z-index: 4;
 }
 #bintur {
+  animation: ani-index 14s infinite linear;
   margin: 15% 0% 0% 10%;
   scale: 60%;
+  z-index: 5;
 }
 #xiaoma {
+  animation: ani-index 15s infinite linear;
   margin: 0% 0% 20% 20%;
   scale: 100%;
+  z-index: 6;
 }
 #gx1000 {
+  animation: ani-index 16s infinite linear;
   margin: -8% 0% 0% -10%;
   scale: 80%;
+  z-index: 7;
 }
 #nard {
+  animation: ani-index 17s infinite linear;
   margin: -1% 0% 0% 85%;
   scale: 100%;
+  z-index: 8;
 }
 #majorana {
+  
+  animation: orbit 18s infinite linear;
+  animation: ani-index 18s infinite linear;
   margin: 25% 10% 10% 20%;
   scale: 80%;
+  z-index: 9;
 }
 
 
 
 /* Button animation */
 .btn-image {
-transition: scale 0.7s;
+  transition: scale 0.7s;
 }
 .btn-image:hover {
   filter: brightness(1.2);
@@ -79,48 +100,11 @@ transition: scale 0.7s;
 }
 
 
+
 /* FUNCTIONAL LINKS*/
 
-/* The Modal (background) */
-.modal {
-display: none;
-position: absolute;
-z-index: 50;
-padding-top: 100px;
-left: 0;
-top: 0;
-width: 100%;
-height: 100%; 
-overflow: auto;
-background-color: rgb(0,0,0);
-background-color: rgba(0,0,0,0);
-}
 
-/* Modal Content */
-.modal-box {
-position: relative;
-background-color: rgb(22, 182, 107);
-margin: auto;
-padding: 0;
-border: 1rem solid rgb(22, 182, 107);
-outline: 0.5rem solid rgb(69, 107, 89);;
-border-radius: 7px;
-max-width: 496px;
-animation-name: animate1;
-animation-duration: 0.4s;
-
-}
-.modal-content {
-  min-width: 480px;
-  min-height: 270px;
-}
-
-/* Animation */
-
-@keyframes animate1 {
-from {content: 0; opacity:0}
-to {opacity:1}
-}
+/* ANIMATION */
 @keyframes coloring {
   0% { background-color: blue; }
   25% { background-color: red; }
@@ -128,27 +112,22 @@ to {opacity:1}
   75%  { background-color: green; }
   100%   { background-color: blue; }
 }
-
-/* The Close Button */
-.close {
-  margin: 15em;
-  padding: 0em 0.2em;
-  border-radius: 1000px;
-  background-color: rgb(207, 66, 66);
-  color: white;
-  font-size: 3em;
-  font-weight: 700;
-
-}
-.close:hover,
-.close:focus {
-color: #000;
-text-decoration: none;
-cursor: pointer;
+@keyframes ani-index {
+  0% {z-index: 1; transform: translate3d(0, 0, 0);}
+  10% {transform: translate3d(12em, -8em, 0em);}
+  20% {transform: translate3d(24em, -16em, 0em);}
+  30% {transform: translate3d(36em, -24em, 0em);}
+  40% {transform: translate3d(24em, -32em, 0em);}
+  50% {transform: translate3d(12em, -38em, 0em);}
+  60% {transform: translate3d(0em, -32em, 0em);}
+  70% {transform: translate3d(-12em, -24em, 0em);}
+  80% {transform: translate3d(-24em, -16em, 0em);}
+  90% {transform: translate3d(-12em, -8em, 0em);}
+  100% { z-index: 9; transform: translate3d(0em, 0em, 0em);}
 }
 
- 
-/* dynamic screen sizing */
+
+/* DYNAMIC SCREEN SIZING */
 
 @media screen and (max-width:1800px) {
   .btn-image {
@@ -194,5 +173,3 @@ cursor: pointer;
     width: 10%;
   }
 }
-
-/* Bouncing Animation */
