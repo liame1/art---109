@@ -1,4 +1,3 @@
-
 window.addEventListener("load", function () {
     const buttons = document.querySelectorAll(".clickable-btn");
     const modal = document.getElementById("my-modal");
