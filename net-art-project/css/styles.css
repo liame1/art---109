@@ -15,7 +15,7 @@ html {
 body {
   animation-name: coloring;
   animation-duration: 10s;
-    animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   overflow: hidden;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -32,65 +32,166 @@ a {
 }
 
 #cabin {
-  animation: ani-index 10s infinite linear;
-  margin: 27% 0% 0% -35%;
+  animation: ani-index 20s infinite reverse;
+  margin: 27% -35%;
   scale: 50%;
   z-index: 1;
 }
 #larry {
-  animation: ani-index 11s infinite linear;
-  margin: 30% 0% 0% 70%;
+  animation: ani-index 21s infinite reverse;
+  margin: 30% 70%;
   scale: 100%;
   z-index: 2;
 }
 #boyboy {
-  animation: ani-index 12s infinite linear;
-  margin: -2% 0% 0% 45%;
+  animation: ani-index 12s infinite reverse;
+  margin: 4% 50%;
   scale: 80%;
   z-index: 3;
 }
 #cubic {
-  animation: ani-index 13s infinite linear;
-  margin: 10% 0% 0% 40%;
+  animation: ani-index 23s infinite reverse;
+  margin: 0% 40%;
   scale: 60%;
   z-index: 4;
 }
 #bintur {
-  animation: ani-index 14s infinite linear;
-  margin: 15% 0% 0% 10%;
+  animation: ani-index 24s infinite reverse;
+  margin: 25% 5%;
   scale: 60%;
   z-index: 5;
 }
 #xiaoma {
-  animation: ani-index 15s infinite linear;
-  margin: 0% 0% 20% 20%;
+  animation: ani-index 25s infinite reverse;
+  margin: 0% 20%;
   scale: 100%;
   z-index: 6;
 }
 #gx1000 {
-  animation: ani-index 16s infinite linear;
-  margin: -8% 0% 0% -10%;
+  animation: ani-index 26s infinite reverse;
+  margin: -2% -5%;
   scale: 80%;
   z-index: 7;
 }
 #nard {
-  animation: ani-index 17s infinite linear;
-  margin: -1% 0% 0% 85%;
+  animation: ani-index 27s infinite reverse;
+  margin: -1% 85%;
   scale: 100%;
   z-index: 8;
 }
 #majorana {
-  
-  animation: orbit 18s infinite linear;
-  animation: ani-index 18s infinite linear;
-  margin: 25% 10% 10% 20%;
+  animation: ani-index 28s infinite reverse;
+  margin: 25% 20%;
   scale: 80%;
   z-index: 9;
+}
+#brickcraft {
+  animation: ani-index 29s infinite reverse;
+  margin: 25% 15%;
+  scale: 80%;
+  z-index: 10;
+}
+#ben-deen {
+  animation: ani-index 30s infinite reverse;
+  margin: 0% 30%;
+  scale: 80%;
+  z-index: 11;
+}
+#birthday {
+  animation: ani-index 31s infinite reverse;
+  margin: 5% 20%;
+  scale: 80%;
+  z-index: 12;
+}
+#casual {
+  animation: ani-index 32s infinite reverse;
+  margin: 15% 1%;
+  scale: 80%;
+  z-index: 13;
+}
+#channel5 {
+  animation: ani-index 20s infinite reverse;
+  margin: 35% 2%;
+  scale: 80%;
+  z-index: 14;
+}
+#climbing {
+  animation: ani-index 21s infinite reverse;
+  margin: 6% 75%;
+  scale: 80%;
+  z-index: 15;
+}
+#dayum {
+  animation: ani-index 22s infinite reverse;
+  margin: 10% 35%;
+  scale: 80%;
+  z-index: 16;
+}
+#joker {
+  animation: ani-index 23s infinite reverse;
+  margin: 36% 40%;
+  scale: 80%;
+  z-index: 17;
+}
+#knx {
+  animation: ani-index 24s infinite reverse;
+  margin: 15% 15%;
+  scale: 80%;
+  z-index: 18;
+}
+#konbini {
+  animation: ani-index 25s infinite reverse;
+  margin: 22% 10% 10% 70%;
+  scale: 80%;
+  z-index: 19;
+}
+#meow {
+  animation: ani-index 26s infinite reverse;
+  margin: 5% 10% 10% 65%;
+  scale: 80%;
+  z-index: 20;
+}
+#monster {
+  animation: ani-index 27s infinite reverse;
+  margin: 2% 10%;
+  scale: 80%;
+  z-index: 21;
+}
+#parkour {
+  animation: ani-index 28s infinite reverse;
+  margin: 12% 32%;
+  scale: 80%;
+  z-index: 22;
+}
+#skrillex {
+  animation: ani-index 29s infinite reverse;
+  margin: 25% 60%;
+  scale: 80%;
+  z-index: 23;
+}
+#south-korea {
+  animation: ani-index 30s infinite reverse;
+  margin: 18% 0%;
+  scale: 80%;
+  z-index: 24;
+}
+#trump-rally {
+  animation: ani-index 31s infinite reverse;
+  margin: 25% 30%;
+  scale: 80%;
+  z-index: 25;
+}
+#yuzu {
+  animation: ani-index 32s infinite reverse;
+  margin: 15% 10% 10% 25%;
+  scale: 80%;
+  z-index: 26;
 }
 
 
 
-/* Button animation */
+
+/* Button hover animation */
 .btn-image {
   transition: scale 0.7s;
 }
@@ -98,7 +199,6 @@ a {
   filter: brightness(1.2);
   scale: 110%;
 }
-
 
 
 /* FUNCTIONAL LINKS*/
@@ -114,18 +214,34 @@ a {
 }
 @keyframes ani-index {
   0% {z-index: 1; transform: translate3d(0, 0, 0);}
-  10% {transform: translate3d(12em, -8em, 0em);}
-  20% {transform: translate3d(24em, -16em, 0em);}
-  30% {transform: translate3d(36em, -24em, 0em);}
-  40% {transform: translate3d(24em, -32em, 0em);}
-  50% {transform: translate3d(12em, -38em, 0em);}
-  60% {transform: translate3d(0em, -32em, 0em);}
-  70% {transform: translate3d(-12em, -24em, 0em);}
-  80% {transform: translate3d(-24em, -16em, 0em);}
-  90% {transform: translate3d(-12em, -8em, 0em);}
+  10% {transform: translate3d(6em, -6em, 0em);}
+  20% {transform: translate3d(12em, -12em, 0em);}
+  30% {transform: translate3d(18em, -18em, 0em);}
+  40% {transform: translate3d(12em, -24em, 0em);}
+  50% {transform: translate3d(6em, -30em, 0em);}
+  60% {transform: translate3d(0em, -24em, 0em);}
+  70% {transform: translate3d(-6em, -18em, 0em);}
+  80% {transform: translate3d(-12em, -12em, 0em);}
+  90% {transform: translate3d(-6em, -6em, 0em);}
   100% { z-index: 9; transform: translate3d(0em, 0em, 0em);}
 }
 
+
+/* LIST STYLING */
+select {
+  font-size: 800px;
+  border: 7px solid black;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(83, 83, 83);
+  margin: 20vh 40vw;
+  text-align: center;
+  font-size: large;
+  position: relative;
+  width: 20em;
+  height: 5em;
+  z-index: 99;
+}
 
 /* DYNAMIC SCREEN SIZING */
 
