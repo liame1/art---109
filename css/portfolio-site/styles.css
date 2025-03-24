@@ -197,10 +197,12 @@ footer a:hover {
 .home .content-wrapper {
     flex: 1 0 auto;
 }
+
 .content-bg {
     background: #66637090;
     padding: 30px;
 }
+
 @media screen and (max-width:650px) {
     .home .content-wrapper {
         padding: 10px;
