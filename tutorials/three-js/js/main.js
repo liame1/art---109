@@ -7,14 +7,11 @@ import * as THREE from 'three';
 
 // Import add-ons
 import { OrbitControls } from 'https://unpkg.com/three@0.162.0/examples/jsm/controls/OrbitControls.js';
-// import { GLTFLoader } from 'https://unpkg.com/three@0.162.0/examples/jsm/loaders/GLTFLoader.js'; // to load 3d models
+import { GLTFLoader } from 'https://unpkg.com/three@0.162.0/examples/jsm/loaders/GLTFLoader.js'; // to load 3d models
 
 
 
 // ~~~~~~~~~~~~~~~~Create scene here~~~~~~~~~~~~~~~~
-// const light = new THREE.DirectionalLight(0xffffff, 3);
-// light.position.set(1,1,5);
-// scene.add(light);
 
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(100, window.innerWidth / window.innerHeight, 0.1, 1000);
@@ -24,17 +21,19 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.setAnimationLoop( animate );
 document.body.appendChild(renderer.domElement);
 
-
+const light = new THREE.DirectionalLight(0x808080, 3);
+	light.position.set(1,1,5);
+	scene.add(light);
 
 // ~~~~~~~~~~~~~~~~ Initiate add-ons ~~~~~~~~~~~~~~~~
 const controls = new OrbitControls(camera, renderer.domElement);
 
-// const loader = new GLTFLoader(); // to load 3d models
+const loader = new GLTFLoader(); // to load 3d models
 
-// loader.load('assets/dog_animation_5.glb', function (gltf){
-// 	const dog = gtlf.scene;
-// 	scene.add( dog );
-// })
+loader.load('assets/dog_shiny.gltf', function (gltf){
+	const dog = gltf.scene;
+	scene.add( dog );
+})
 
 // ~~~~~~~~~~~~~~~~ Create Geometry ~~~~~~~~~~~~~~~~
 const geometry = new THREE.BoxGeometry( 1, 1, 1 );
