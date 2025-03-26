@@ -21,9 +21,12 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.setAnimationLoop( animate );
 document.body.appendChild(renderer.domElement);
 
-const light = new THREE.DirectionalLight(0x808080, 3);
-	light.position.set(1,1,5);
+const light = new THREE.DirectionalLight(0x223300, 20);
+	light.position.set(0,1,2);
 	scene.add(light);
+const light2 = new THREE.DirectionalLight(0x00ffff, 20);
+	light.position.set(0,1,2);
+	scene.add(light2);
 
 // ~~~~~~~~~~~~~~~~ Initiate add-ons ~~~~~~~~~~~~~~~~
 const controls = new OrbitControls(camera, renderer.domElement);
@@ -33,11 +36,13 @@ const loader = new GLTFLoader(); // to load 3d models
 loader.load('assets/dog_shiny.gltf', function (gltf){
 	const dog = gltf.scene;
 	scene.add( dog );
+	dog.scale.set(3,3,3);
 })
 
 // ~~~~~~~~~~~~~~~~ Create Geometry ~~~~~~~~~~~~~~~~
-const geometry = new THREE.BoxGeometry( 1, 1, 1 );
-const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
+const geometry = new THREE.BoxGeometry( 3, 3, 3 );
+const material = new THREE.MeshStandardMaterial( { color: 0xffffff0 } );
+
 const cube = new THREE.Mesh( geometry, material );
 scene.add( cube );
 
