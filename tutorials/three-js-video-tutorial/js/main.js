@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 // Import add-ons
-import { OrbitControls } from 'https://unpkg.com/three@0.162.0/examples/jsm/controls/OrbitControls.js';
-import { GLTFLoader } from 'https://unpkg.com/three@0.162.0/examples/jsm/loaders/GLTFLoader.js'; // to load 3d models
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js'; 
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
 // ~~~~~ GLOBAL VARIABLES
 let scene, camera, renderer, cube, cylinder;
