@@ -31,7 +31,8 @@ function init() {
     // ~~~~~ ADD TEXTURE :
     const texture = new THREE.TextureLoader().load('textures/grasslight-big.jpg');
     const material = new THREE.MeshStandardMaterial({ map: texture });
-    cylinder = new THREE.Mesh( geometry, material );
+    const baiscMaterial = new THREE.MeshBasicMaterial({ map: texture });
+    cylinder = new THREE.Mesh( geometry, baiscMaterial );
     scene.add(cylinder);
     cylinder.position.set(-3, 0, 0);
     cube = new THREE.Mesh( geometry2, material );
@@ -45,7 +46,6 @@ function init() {
     const light2 = new THREE.DirectionalLight(0x00ffff, 20);
         light.position.set(0,1,2);
         scene.add(light2);
-
 
 
     camera.position.z = 5;
