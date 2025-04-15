@@ -17,11 +17,11 @@ pauseBtn.addEventListener('click', function() {
 });
 volumeUp.addEventListener('click', function() {
     song.volume += 0.1;
-    console.log("volume raised");
+    console.log(song.volume);
 });
 volumeDown.addEventListener('click', function() {
     song.volume -= 0.1;
-    console.log("volume lowered");
+    console.log(song.volume);
 });
 
 // ------- DISPLAY AFTER SONG LOADED :
