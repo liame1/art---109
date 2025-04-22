@@ -8,7 +8,11 @@ console.log("Node is WORKING!");
 
 var socket = require('socket.io');
 
-export var io = socket(server);
+
+var io = socket(server);
+
+//attempt at exporting
+// export var io = socket(server);
 // module.exports = { io };
 
 
